@@ -1,0 +1,7 @@
+C:\Users\molnarhollo\Documents\GitHub\MH-Gokart\MH-Gokart\MH-Gokart\bin\Debug\MH-Gokart.exe.config
+C:\Users\molnarhollo\Documents\GitHub\MH-Gokart\MH-Gokart\MH-Gokart\bin\Debug\MH-Gokart.exe
+C:\Users\molnarhollo\Documents\GitHub\MH-Gokart\MH-Gokart\MH-Gokart\bin\Debug\MH-Gokart.pdb
+C:\Users\molnarhollo\Documents\GitHub\MH-Gokart\MH-Gokart\MH-Gokart\obj\Debug\MH-Gokart.csproj.AssemblyReference.cache
+C:\Users\molnarhollo\Documents\GitHub\MH-Gokart\MH-Gokart\MH-Gokart\obj\Debug\MH-Gokart.csproj.CoreCompileInputs.cache
+C:\Users\molnarhollo\Documents\GitHub\MH-Gokart\MH-Gokart\MH-Gokart\obj\Debug\MH-Gokart.exe
+C:\Users\molnarhollo\Documents\GitHub\MH-Gokart\MH-Gokart\MH-Gokart\obj\Debug\MH-Gokart.pdb
