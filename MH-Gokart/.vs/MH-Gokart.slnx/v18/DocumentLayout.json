@@ -3,21 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\user\\Documents\\GitHub\\MH-Gokart\\MH-Gokart\\",
   "Documents": [
     {
-<<<<<<< Updated upstream
-      "AbsoluteMoniker": "D:0:0:{0BBB3560-D0E2-4D01-80EA-5EFE0123C1D0}|MH-Gokart\\MH-Gokart.csproj|C:\\Users\\molnarhollo\\Documents\\GitHub\\MH-Gokart\\MH-Gokart\\mh-gokart\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0BBB3560-D0E2-4D01-80EA-5EFE0123C1D0}|MH-Gokart\\MH-Gokart.csproj|solutionrelative:mh-gokart\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\molnarhollo\\Documents\\GitHub\\MH-Gokart\\MH-Gokart\\MH-Gokart\\Pregram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:MH-Gokart\\Pregram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-=======
       "AbsoluteMoniker": "D:0:0:{0BBB3560-D0E2-4D01-80EA-5EFE0123C1D0}|MH-Gokart\\MH-Gokart.csproj|c:\\users\\user\\documents\\github\\mh-gokart\\mh-gokart\\mh-gokart\\filename.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0BBB3560-D0E2-4D01-80EA-5EFE0123C1D0}|MH-Gokart\\MH-Gokart.csproj|solutionrelative:mh-gokart\\filename.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0BBB3560-D0E2-4D01-80EA-5EFE0123C1D0}|MH-Gokart\\MH-Gokart.csproj|C:\\Users\\user\\Documents\\GitHub\\MH-Gokart\\MH-Gokart\\mh-gokart\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0BBB3560-D0E2-4D01-80EA-5EFE0123C1D0}|MH-Gokart\\MH-Gokart.csproj|solutionrelative:mh-gokart\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
->>>>>>> Stashed changes
     }
   ],
   "DocumentGroupContainers": [
@@ -27,48 +14,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-<<<<<<< Updated upstream
-              "DocumentIndex": 1,
-              "Title": "Pregram.cs",
-              "DocumentMoniker": "C:\\Users\\molnarhollo\\Documents\\GitHub\\MH-Gokart\\MH-Gokart\\MH-Gokart\\Pregram.cs",
-              "RelativeDocumentMoniker": "MH-Gokart\\Pregram.cs",
-              "ToolTip": "C:\\Users\\molnarhollo\\Documents\\GitHub\\MH-Gokart\\MH-Gokart\\MH-Gokart\\Pregram.cs",
-              "RelativeToolTip": "MH-Gokart\\Pregram.cs",
-              "ViewState": "AgIAADYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-14T08:30:38.383Z",
-=======
               "DocumentIndex": 0,
               "Title": "FileName.cs",
               "DocumentMoniker": "C:\\Users\\user\\Documents\\GitHub\\MH-Gokart\\MH-Gokart\\MH-Gokart\\FileName.cs",
               "RelativeDocumentMoniker": "MH-Gokart\\FileName.cs",
               "ToolTip": "C:\\Users\\user\\Documents\\GitHub\\MH-Gokart\\MH-Gokart\\MH-Gokart\\FileName.cs",
               "RelativeToolTip": "MH-Gokart\\FileName.cs",
-              "ViewState": "AgIAAEMAAAAAAAAAAAAcwDsBAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-15T11:21:01.458Z",
->>>>>>> Stashed changes
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Documents\\GitHub\\MH-Gokart\\MH-Gokart\\MH-Gokart\\Program.cs",
-              "RelativeDocumentMoniker": "MH-Gokart\\Program.cs",
-              "ToolTip": "C:\\Users\\user\\Documents\\GitHub\\MH-Gokart\\MH-Gokart\\MH-Gokart\\Program.cs",
-              "RelativeToolTip": "MH-Gokart\\Program.cs",
-<<<<<<< Updated upstream
-              "ViewState": "AgIAACsAAAAAAAAAAAAQwEYAAAAgAAAAAAAAAA==",
-=======
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEYAAAAxAAAAAAAAAA==",
->>>>>>> Stashed changes
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-07T06:24:55.688Z",
+              "WhenOpened": "2026-09-21T07:45:40.84Z",
               "EditorCaption": ""
             }
           ]
