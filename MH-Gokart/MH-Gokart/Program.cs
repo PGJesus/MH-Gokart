@@ -50,6 +50,7 @@ namespace MH_Gokart
         }
         public void Kiir()
         {
+            Console.WriteLine("Azonosító");
             Console.WriteLine($"\t{Azonosito, -30}{(Vezeteknevev + " " + Keresztnev), -25}{Szulido:yyyy.MM.dd}\t18 éves-e: {Vane18, -6}\t{Email}");
         }
     }
@@ -175,7 +176,44 @@ namespace MH_Gokart
             #endregion
 
             #region 5.
+            Console.WriteLine();
+            Console.WriteLine("5.Feladat:");
 
+            bool kilepes = false;
+            while (!kilepes)
+            {
+                Console.WriteLine();
+                Console.WriteLine("\t1 - Versenyzők listázása");
+                Console.WriteLine("\t2 - Időpont foglalása/módosítása azonosító alapján");
+                Console.WriteLine("\t3 - Naptár megjelenítése");
+                Console.WriteLine("\t0 - Kilépés");
+                Console.Write("\tVálasztás: ");
+                string valasztas = Console.ReadLine();
+
+                if (valasztas == "1") 
+                {
+                    foreach (Versenyzo v in versenyzok)
+                    {
+                        v.Kiir();
+                    }
+                }
+                else if (valasztas == "2") 
+                {
+
+                }
+                else if (valasztas == "3") 
+                {
+
+                }
+                else if (valasztas == "0") 
+                {
+                    kilepes = true;
+                }
+                else
+                {
+                    Console.WriteLine("Válasszon egy érvényes opciót!");
+                }
+            }
             #endregion
         }
     }
