@@ -49,15 +49,30 @@ namespace MH_Gokart
         }
         public void Kiir()
         {
-            Console.WriteLine($"Vezetéknév: {Vezeteknevev}");
-            Console.WriteLine($"Keresztnév: {Keresztnev}");
-            Console.WriteLine($"Születési idő: {Szulido}");
-            Console.WriteLine($"18 éves: {Vane18}");
-            Console.WriteLine($"Azonosító: {Azonosito}");
-            Console.WriteLine($"Email: {Email}");
+            Console.WriteLine($"\t{Azonosito, -30}{(Vezeteknevev + " " + Keresztnev), -25}{Szulido:yyyy.MM.dd}\t18 éves-e: {Vane18, -6}\t{Email}");
         }
     }
 
+    class Naptar
+    {
+        public DateTime Datum;
+        public List<string>[] Foglalasok;
+
+        public Naptar(DateTime datum)
+        {
+            Datum = datum;
+            Foglalasok = new List<string>[11];
+            for (int i = 0; i < 11; i++)
+            {
+                Foglalasok[i] = new List<string>();
+            }
+        }
+
+        public bool Szabade(int oraIndex)
+        {
+
+        }
+    }
     internal class Program
     {
         static void Main(string[] args)
