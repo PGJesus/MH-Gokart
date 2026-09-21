@@ -21,16 +21,12 @@ namespace MH_Gokart
             Telefon = telefon;
             Domain = domain;
         }
-
-        public static void KiirFejlec()
-        {
-            Console.WriteLine($"\t{"Azonosító",-32}{"Név",-22}{"Szül. idő",-14}{"18 éves-e",-12}{"Email",-32}");
-            Console.WriteLine("\t" + new string('-', 112));
-        }
-
         public void Kiir()
         {
-            Console.WriteLine($"\t{Azonosito,-32}{(Vezeteknevev + " " + Keresztnev),-22}{Szulido,-14:yyyy.MM.dd}{Vane18,-12}{Email,-32}");
+            Console.WriteLine($"\tNév:\t\t{Nev}");
+            Console.WriteLine($"\tCím:\t\t{Cim}");
+            Console.WriteLine($"\tTelefon:\t{Telefon}");
+            Console.WriteLine($"\tWeboldal:\thttp://{Domain}");
         }
     }
 
@@ -51,10 +47,15 @@ namespace MH_Gokart
             Azonosito = "GO-" + Vezeteknevev + Keresztnev + "-" + Szulido.ToString("yyyyMMdd");
             Email = (Vezeteknevev + "." + Keresztnev + "@gmail.com").ToLower();
         }
+        public static void KiirFejlec()
+        {
+            Console.WriteLine($"\t{"Azonosító",-32}{"Név",-22}{"Szül. idő",-14}{"18 éves-e",-12}{"Email",-32}");
+            Console.WriteLine("\t" + new string('-', 112));
+        }
+
         public void Kiir()
         {
-            Console.WriteLine("Azonosító");
-            Console.WriteLine($"\t{Azonosito, -30}{(Vezeteknevev + " " + Keresztnev), -25}{Szulido:yyyy.MM.dd}\t18 éves-e: {Vane18, -6}\t{Email}");
+            Console.WriteLine($"\t{Azonosito,-32}{(Vezeteknevev + " " + Keresztnev),-22}{Szulido,-14:yyyy.MM.dd}{Vane18,-12}{Email,-32}");
         }
     }
 
@@ -197,7 +198,11 @@ namespace MH_Gokart
                 {
                     foreach (Versenyzo v in versenyzok)
                     {
-                        v.Kiir();
+                        Versenyzo.KiirFejlec();
+                        foreach (Versenyzo versenyzo in versenyzok)
+                        {
+                            versenyzo.Kiir();
+                        }
                     }
                 }
                 else if (valasztas == "2") 
