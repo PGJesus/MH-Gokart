@@ -1,0 +1,9 @@
+c:\Users\user\Documents\GitHub\MH-Gokart\MH-Gokart\MH-Gokart\bin\Debug\net472\MH-Gokart.exe.config
+c:\Users\user\Documents\GitHub\MH-Gokart\MH-Gokart\MH-Gokart\bin\Debug\net472\MH-Gokart.exe
+c:\Users\user\Documents\GitHub\MH-Gokart\MH-Gokart\MH-Gokart\bin\Debug\net472\MH-Gokart.pdb
+c:\Users\user\Documents\GitHub\MH-Gokart\MH-Gokart\MH-Gokart\obj\Debug\net472\MH-Gokart.csproj.AssemblyReference.cache
+c:\Users\user\Documents\GitHub\MH-Gokart\MH-Gokart\MH-Gokart\obj\Debug\net472\MH-Gokart.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\user\Documents\GitHub\MH-Gokart\MH-Gokart\MH-Gokart\obj\Debug\net472\MH-Gokart.csproj.CoreCompileInputs.cache
+c:\Users\user\Documents\GitHub\MH-Gokart\MH-Gokart\MH-Gokart\obj\Debug\net472\MH-Gokart.sourcelink.json
+c:\Users\user\Documents\GitHub\MH-Gokart\MH-Gokart\MH-Gokart\obj\Debug\net472\MH-Gokart.exe
+c:\Users\user\Documents\GitHub\MH-Gokart\MH-Gokart\MH-Gokart\obj\Debug\net472\MH-Gokart.pdb
