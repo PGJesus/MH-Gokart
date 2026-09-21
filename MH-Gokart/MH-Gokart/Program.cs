@@ -222,11 +222,109 @@ namespace MH_Gokart
                 }
                 else if (valasztas == "2")
                 {
+                    Console.Write("\tVersenyző azonosítója: ");
+                    string azonosito = Console.ReadLine();
 
+                    Versenyzo talalt = null;
+                    foreach (Versenyzo v in versenyzok)
+                    {
+                        if (v.Azonosito == azonosito)
+                        {
+                            talalt = v;
+                            break;
+                        }
+                    }
+
+                    if (talalt == null)
+                    {
+                        Console.WriteLine("\tNincs ilyen azonosítójú versenyző!");
+                        continue;
+                    }
+
+                    Console.Write("\tDátum (éééé.hh.nn): ");
+                    DateTime valasztottNap;
+                    if (!DateTime.TryParse(Console.ReadLine(), out valasztottNap))
+                    {
+                        Console.WriteLine("\tHibás dátum!");
+                        continue;
+                    }
+
+                    Naptar valasztottNaptar = null;
+                    foreach (Naptar n in naptarak)
+                    {
+                        if (n.Datum.Date == valasztottNap.Date)
+                        {
+                            valasztottNaptar = n;
+                            break;
+                        }
+                    }
+
+                    if (valasztottNaptar == null)
+                    {
+                        Console.WriteLine("\tEz a dátum a hónapon kívül esik!");
+                        continue;
+                    }
+
+                    Console.Write("\tKezdő időpont (8-18): ");
+                    int oraKezdet;
+                    if (!int.TryParse(Console.ReadLine(), out oraKezdet) || oraKezdet < 8 || oraKezdet > 18)
+                    {
+                        Console.WriteLine("\tHibás időpont!");
+                        continue;
+                    }
+
+                    Console.Write("\tIdőtartam órában (1 vagy 2): ");
+                    int oraTartam;
+                    if (!int.TryParse(Console.ReadLine(), out oraTartam) || (oraTartam != 1 && oraTartam != 2))
+                    {
+                        Console.WriteLine("\tHibás időtartam!");
+                        continue;
+                    }
+
+                    if (oraKezdet + oraTartam > 19)
+                    {
+                        Console.WriteLine("\tA foglalás túlnyúlik a nyitvatartáson!");
+                        continue;
+                    }
+
+                    bool vanHely = true;
+                    for (int i = 0; i < oraTartam; i++)
+                    {
+                        int index = oraKezdet - 8 + i;
+                        if (!valasztottNaptar.Szabade(index))
+                        {
+                            vanHely = false;
+                        }
+                    }
+
+                    if (!vanHely)
+                    {
+                        Console.WriteLine("\tA pálya betelt ebben az időszakban (max. 20 fő)!");
+                        continue;
+                    }
+
+                    for (int i = 0; i < oraTartam; i++)
+                    {
+                        int index = oraKezdet - 8 + i;
+                        valasztottNaptar.Foglal(index, talalt.Azonosito);
+                    }
+
+                    Console.WriteLine("\tSikeres foglalás!");
                 }
                 else if (valasztas == "3")
                 {
+                    Console.Write(new string(' ', 20));
+                    for (int i = 0; i < 11; i++)
+                    {
+                        Console.Write($"{i + 8}-{i + 9}  ");
 
+                    }
+                    Console.WriteLine();
+
+                    foreach (Naptar n in naptarak)
+                    {
+                        n.Kiir();
+                    }
                 }
                 else if (valasztas == "0")
                 {
