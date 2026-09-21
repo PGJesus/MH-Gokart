@@ -22,12 +22,15 @@ namespace MH_Gokart
             Domain = domain;
         }
 
+        public static void KiirFejlec()
+        {
+            Console.WriteLine($"\t{"Azonosító",-32}{"Név",-22}{"Szül. idő",-14}{"18 éves-e",-12}{"Email",-32}");
+            Console.WriteLine("\t" + new string('-', 112));
+        }
+
         public void Kiir()
         {
-            Console.WriteLine($"Név: {Nev}");
-            Console.WriteLine($"Cím: {Cim}");
-            Console.WriteLine($"Telefon: {Telefon}");
-            Console.WriteLine($"Domain: {Domain}");
+            Console.WriteLine($"\t{Azonosito,-32}{(Vezeteknevev + " " + Keresztnev),-22}{Szulido,-14:yyyy.MM.dd}{Vane18,-12}{Email,-32}");
         }
     }
 
