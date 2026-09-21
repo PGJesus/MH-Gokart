@@ -57,7 +57,7 @@ namespace MH_Gokart
 
         public void Kiir()
         {
-            Console.WriteLine($"\t{Azonosito,-32}{(Vezeteknevev + " " + Keresztnev),-22}{Szulido,-14:yyyy.MM.dd}{Vane18,-12}{Email,-32}");
+            Console.WriteLine($"\t{Azonosito,-32}{(Vezeteknevev + " " + Keresztnev),-22}{Szulido,-14:yyyy.MM.dd}{(Vane18 ? "Igen" : "Nem"),-12}{Email,-32}");
         }
     }
 
@@ -183,7 +183,7 @@ namespace MH_Gokart
                 naptarak.Add(new Naptar(nap));
             }
 
-            Console.WriteLine("\t\t\t8-9  9-10 10-11 11-12 12-13 13-14 14-15 15-16 16-17 17-18 18-19");
+            Console.WriteLine("\t\t\t8-9 9-10 10-11 11-12 12-13 13-14 14-15 15-16 16-17 17-18 18-19");
             foreach (Naptar n in naptarak)
             {
                 n.Kiir();
