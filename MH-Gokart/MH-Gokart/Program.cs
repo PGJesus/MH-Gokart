@@ -88,13 +88,13 @@ namespace MH_Gokart
 
         public void Kiir()
         {
-            Console.Write($"\t{Datum:yyyy.MM.dd}\t");
+            Console.Write($"\t{Datum:yyyy.MM.dd}  ");
             ConsoleColor original = Console.ForegroundColor;
 
             for (int i = 0; i < 11; i++)
             {
                 Console.ForegroundColor = Foglalasok[i].Count == 0 ? ConsoleColor.Green : ConsoleColor.Red;
-                Console.Write($"{i + 8,2}-{i + 9,-3}");
+                Console.Write($"{i + 8}-{i + 9}  ");
             }
 
             Console.ForegroundColor = original;
@@ -183,13 +183,14 @@ namespace MH_Gokart
                 naptarak.Add(new Naptar(nap));
             }
 
-            Console.Write("\t\t\t");
+            Console.Write(new string(' ', 20));
             for (int i = 0; i < 11; i++)
             {
-                string cimke = $"{i + 8,2}-{i + 9}";
-                Console.Write($"{cimke, -6}");
+                Console.Write($"{i + 8}-{i + 9}  ");
+
             }
             Console.WriteLine();
+
             foreach (Naptar n in naptarak)
             {
                 n.Kiir();
