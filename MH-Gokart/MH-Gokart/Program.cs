@@ -21,12 +21,13 @@ namespace MH_Gokart
             Telefon = telefon;
             Domain = domain;
         }
+
         public void Kiir()
         {
-            Console.WriteLine($"\tNév:\t\t{Nev}");
-            Console.WriteLine($"\tCím:\t\t{Cim}");
-            Console.WriteLine($"\tTelefon:\t{Telefon}");
-            Console.WriteLine($"\tWeboldal:\thttp://{Domain}");
+            Console.WriteLine($"Név: {Nev}");
+            Console.WriteLine($"Cím: {Cim}");
+            Console.WriteLine($"Telefon: {Telefon}");
+            Console.WriteLine($"Domain: {Domain}");
         }
     }
 
@@ -47,6 +48,7 @@ namespace MH_Gokart
             Azonosito = "GO-" + Vezeteknevev + Keresztnev + "-" + Szulido.ToString("yyyyMMdd");
             Email = (Vezeteknevev + "." + Keresztnev + "@gmail.com").ToLower();
         }
+
         public static void KiirFejlec()
         {
             Console.WriteLine($"\t{"Azonosító",-32}{"Név",-22}{"Szül. idő",-14}{"18 éves-e",-12}{"Email",-32}");
@@ -127,8 +129,17 @@ namespace MH_Gokart
             Console.WriteLine();
             Console.WriteLine("2.Feladat");
 
-            string[] vezeteknevek = File.ReadAllLines("vezeteknevek.txt");
-            string[] keresztnevek = File.ReadAllLines("keresztnevek.txt");
+            string[] vezeteknevek = File.ReadAllText("vezeteknevek.txt")
+                .Split(',')
+                .Select(n => n.Trim().Trim('\''))
+                .Where(n => !string.IsNullOrWhiteSpace(n))
+                .ToArray();
+
+            string[] keresztnevek = File.ReadAllText("keresztnevek.txt")
+                .Split(',')
+                .Select(n => n.Trim().Trim('\''))
+                .Where(n => !string.IsNullOrWhiteSpace(n))
+                .ToArray();
 
             int versenyzoSzam = rnd.Next(1, 151);
             List<Versenyzo> versenyzok = new List<Versenyzo>();
@@ -194,32 +205,29 @@ namespace MH_Gokart
                 Console.Write("\tVálasztás: ");
                 string valasztas = Console.ReadLine();
 
-                if (valasztas == "1") 
+                if (valasztas == "1")
                 {
+                    Versenyzo.KiirFejlec();
                     foreach (Versenyzo v in versenyzok)
                     {
-                        Versenyzo.KiirFejlec();
-                        foreach (Versenyzo versenyzo in versenyzok)
-                        {
-                            versenyzo.Kiir();
-                        }
+                        v.Kiir();
                     }
                 }
-                else if (valasztas == "2") 
+                else if (valasztas == "2")
                 {
 
                 }
-                else if (valasztas == "3") 
+                else if (valasztas == "3")
                 {
 
                 }
-                else if (valasztas == "0") 
+                else if (valasztas == "0")
                 {
                     kilepes = true;
                 }
                 else
                 {
-                    Console.WriteLine("Válasszon egy érvényes opciót!");
+                    Console.WriteLine($"\n\tVálasszon egy érvényes opciót!");
                 }
             }
             #endregion

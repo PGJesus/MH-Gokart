@@ -9,3 +9,6 @@ C:\Users\user\Documents\GitHub\MH-Gokart\MH-Gokart\MH-Gokart\obj\Debug\MH-Gokart
 C:\Users\user\Documents\GitHub\MH-Gokart\MH-Gokart\MH-Gokart\obj\Debug\MH-Gokart.csproj.CoreCompileInputs.cache
 C:\Users\user\Documents\GitHub\MH-Gokart\MH-Gokart\MH-Gokart\obj\Debug\MH-Gokart.exe
 C:\Users\user\Documents\GitHub\MH-Gokart\MH-Gokart\MH-Gokart\obj\Debug\MH-Gokart.pdb
+C:\Users\user\Documents\GitHub\MH-Gokart\MH-Gokart\MH-Gokart\bin\Debug\MH-Gokart.exe.config
+C:\Users\user\Documents\GitHub\MH-Gokart\MH-Gokart\MH-Gokart\bin\Debug\MH-Gokart.exe
+C:\Users\user\Documents\GitHub\MH-Gokart\MH-Gokart\MH-Gokart\bin\Debug\MH-Gokart.pdb
