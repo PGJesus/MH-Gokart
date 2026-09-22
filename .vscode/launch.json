@@ -1,0 +1,14 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "MH-Gokart (external terminal)",
+            "type": "coreclr",
+            "request": "launch",
+            "program": "${workspaceFolder}/MH-Gokart/MH-Gokart/bin/Debug/net472/MH-Gokart.exe",
+            "cwd": "${workspaceFolder}/MH-Gokart/MH-Gokart/bin/Debug/net472",
+            "console": "externalTerminal",
+            "stopAtEntry": false
+        }
+    ]
+}
